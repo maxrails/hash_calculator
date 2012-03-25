@@ -1,0 +1,6 @@
+Please Upload file:
+=form_for @preview, :html=>{:multipart => true} do |f|
+  =f.file_field :file_path
+  =f.text_area :file_slice
+#loading{:style=>"display:none;"}
+  =image_tag "loading.gif"
