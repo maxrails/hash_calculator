@@ -84,7 +84,7 @@ function readBlob(file){
   reader.onloadend = function(evt) {
     if (evt.target.readyState == FileReader.DONE) {
       $('#loading').hide();
-      var StepLength = 900000;
+      var StepLength = 9000;
       //console.log(evt.target.result.length/StepLength);
       var LastValue = 0;
       $('#preview_file_slice').val(evt.target.result.substring(LastValue,StepLength));
